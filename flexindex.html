@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercise 1</title>
+        <meta
+            content="width=device-width, initial-scale=1, maximum-scale=1"
+            name="viewpoint"
+        />
+        <style>
+            .container{
+                display: flex;
+                flex-direction: row;
+                /* flex-direction: row; */
+                align-items: center;
+                justify-content: space-around;
+                border: 2px solid yellow;
+            }
+
+            .box{
+                width: 250px;
+                height: 150px;
+                border: 1px solid red;
+            }
+
+            #one{
+                order: 1;
+                /* flex: 1 2 300px; */
+            }
+
+            #two{
+                order: 1;
+                /* flex: 1 2 300px; */
+            }
+
+            #three{
+                order: 1;
+                /* flex: 1 2 300px; */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div id="one" class="box">Box 1</div>
+            <div id="two" class="box">Box 2</div>
+            <div id="three" class="box">Box 3</div>
+        </div>
+    </body>
+</html>

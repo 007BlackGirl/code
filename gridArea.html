@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML Layout</title>
+        <meta
+            content="width=device-width, initial-scale=1, maximum-scale=1"
+            name="viewpoint"
+        />
+        <style>
+            body{
+                background-color: #444;
+                color: #fffff8;
+                font-size: 17px;
+            }
+
+            .container{
+                display: grid;
+                width: 100%;
+                margin: auto;
+                grid-template-columns: 30px 300px;
+                grid-template-rows: 250px 600px 30px;
+                grid-template-areas:
+                "hd hd hd hd hd hd hd hd"
+                "sd sd main main main main main main"
+                "ft ft ft ft ft ft ft ft";
+                border: 2px solid rgb(247,182,96);
+            }
+
+            .box{
+                border: 1px solid red;
+                background-color: rgb(192, 141, 158);
+            }
+
+            .header{
+                grid-area:hd; 
+            }
+
+            .sidebar{
+              grid-area:sd; 
+            }
+
+            .content{
+                grid-area:main;
+            }
+
+            .footer{
+                grid-area:ft;
+            }
+            
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="header box" >Header</div>
+            <div class="sidebar box" >Sidebar</div>
+            <div class="content box" >Content</div>
+            <div class="footer box" >Footer</div>
+        </div>
+    </body>
+
+</html>

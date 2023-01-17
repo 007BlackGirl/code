@@ -1,0 +1,38 @@
+body{
+    background-color: #444;
+}
+
+.container{
+    /* Step 1: Set display to grid*/
+    display: grid;
+   
+    /* Step 2: Setp rows and columns*/
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 100px 350px 600px 100px;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd"
+    "feat feat feat feat feat feat feat"
+    "main main main main main main main"
+    "ft ft ft ft ft ft ft";
+    border: 2px solid yellow;
+}
+.box{
+    border:1px solid red;
+    background: #f8fa9d;
+}
+.header{
+    /* row start/column start/ row end/ column end */
+    grid-area: hd;
+}
+.feature{
+    /* row start/column start/ row end/ column end */
+    grid-area: feat;
+}
+.content{
+    /* row start/column start/ row end/ column end */
+    grid-area: main;
+}
+.footer{
+    /* row start/column start/ row end/ column end */
+    grid-area: ft;
+}

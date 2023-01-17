@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercise 1</title>
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+      name="viewport"
+    />
+
+  <style>
+    body{
+        background: #444;
+        color:#fffff8;
+        font-size: 24px;
+    }
+  .container{
+    /* Step 1: Set display to grid */
+      display:grid;
+      width: 98vw;
+      height: 100vh;
+   /* Step 2: setup rows amd columns */
+      grid-template-columns: repeat(2, 1fr);
+      /* Unknown number of rows0 solution! mixmax(min, auto)  */
+      grid-auto-rows: minmax(100px, auto);
+      border: 2px solid yellow;
+  }
+  .box{
+    border: 1px solid red;
+    background: pink;
+    }
+    
+    #one{ 
+    /* set grid-area here: row start/column start/ row end/ column end */
+      grid-area:1/1/2/3;
+      background: #e96973;
+    
+  }
+    #two{ 
+    /* set grid-area here: row start/column start/ row end/ column end */
+      grid-area:2/1/2/2;
+      background: #ff00ff;
+    
+  }
+     #three{ 
+    /* set grid-area here: row start/column start/ row end/ column end */
+      grid-area:2/2/2/3;
+       background: #d48f34;
+    
+  }
+  #four{ 
+    /* set grid-area here: row start/column start/ row end/ column end */
+      grid-area:3/1/3/2;
+       background: #dad156;
+    
+  }
+    #five{ 
+    /* set grid-area here: row start/column start/ row end/ column end */
+      grid-area:3/2/3/3;
+       background: #00ffff;
+    
+  }
+    #six{ 
+    /* set grid-area here: row start/column start/ row end/ column end */
+      grid-area:4/1/4/3;
+       background: #3dc08e;
+    
+  }
+  </style>
+  </head>
+
+  <body>
+  <div class = "container">
+    <div id="one" class="box"> Space 1</div>
+     <div id="two" class="box"> Space 2</div>
+    <div id="three" class="box"> Space 3</div>
+    <div id="four" class="box"> Space 4</div>
+     <div id="five" class="box"> Space 5</div>
+    <div id="six" class="box"> Space 6</div>
+  </div>
+  </body>
+</html>
